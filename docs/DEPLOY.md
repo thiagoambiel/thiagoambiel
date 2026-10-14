@@ -54,7 +54,7 @@ O site já está configurado para `https://thiagoambiel.com.br`: link canônico,
 3. Espere a Vercel marcar o domínio como válido. O certificado HTTPS é emitido automaticamente.
 4. Para conferir a prévia de compartilhamento, cole o link no [Post Inspector do LinkedIn](https://www.linkedin.com/post-inspector/).
 
-`site/vercel.json` tem `ignoreCommand: git diff --quiet HEAD^ HEAD -- .`: commits que não mexem em `site/` (como editar só o README) não geram novo deploy.
+`site/vercel.json` tem `ignoreCommand`: commits que não mexem em `site/` (como editar só o README) não geram novo deploy. No primeiro commit (sem `HEAD^`) o build sempre roda.
 
 **Pela CLI**, de dentro de `site/`:
 
